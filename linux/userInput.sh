@@ -2,6 +2,6 @@
 
 echo "Reading user input"
 
-read -p "Please enter your name: " userPWD
+read -p "Please enter your name: " userName
 
-echo "Thank you $userPWD!"
+echo "Thank you $userName!"
