@@ -25,4 +25,3 @@ fi
 
 echo "using file $fileName to configure something"
 echo "here are all config files: $configFiles"
-~                                                       
