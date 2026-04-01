@@ -19,7 +19,7 @@ userGroup=$2
 if [ "$userGroup" == "admin"  ]
 then
         echo "configure the server"
-elif [ "$userGroup" == "parallels" ]
+elif [ "$userGroup" == "tanja" ]
 then "administer the server"
 else
         echo "no permission to configure the server. Wrong user group."
