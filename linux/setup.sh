@@ -12,7 +12,7 @@ else
         mkdir config
 fi
 
-userGroup=$1
+userGroup=xx
 if [ userGroup == "admin"  ]
 then
         echo "configure the server"
