@@ -1,1 +1,5 @@
-
+Nexus -> Central location for artifacts
+* private central store
+* upload and store different build artifacts
+* retrive artifacts
+* for internal use
