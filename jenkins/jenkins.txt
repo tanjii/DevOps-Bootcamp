@@ -1,6 +1,0 @@
-To deploy Jenkins: 
-1. Create droplet
-2. enable firewall: ssh 22, custom: 8080
-3. ssh into instance
-4. install docker: 
-  ``
