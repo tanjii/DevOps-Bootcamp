@@ -18,4 +18,9 @@ Curl to install node.js and npm
 execute the script: ``bash nodesource_setup.sh``
 install nodejs ``apt install nodejs``
 
+Verify the versions: 
+npm -v
+node -v
+
+<img width="229" height="102" alt="Screenshot 2026-10-19 at 17 07 59" src="https://github.com/user-attachments/assets/3b849c60-78b3-46c0-8328-3d08e25077d0" />
 
