@@ -34,5 +34,5 @@ Install Stage View Plugin
 This shows the process of each stage, which means all defined stages will be displayed as separate stages in the UI. This helps us see what stage failed.
 To Install, go to Jenkins -> Manage Jenkins -> Plugins -> Available plugins -> Pipeline: Stage view -> Install with Restart, and restart the container. 
 ```docker ps -a #shows all containers, including the ones that are not running```
-```docker start <containerID>
+```docker start <containerID>```
 
