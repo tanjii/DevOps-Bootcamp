@@ -49,12 +49,14 @@ run the build
    add docker hub credentials
 
 2. add build steps to push to hub
-   ```
+```
 docker build -t tanjii/demo-app:jma-1.0 .
 docker login -u $USERNAME -p $PASSWORD 
 docker push tanjii/demo-app:jma-1.0 
 
-   ```
+```
 
-  select add secret text or files and provide username and password variable, select specific credentials
+select add secret text or files and provide username and password variable, select specific credentials
+
+
 <img width="716" height="538" alt="Screenshot 2026-11-10 at 14 13 17" src="https://github.com/user-attachments/assets/608069ab-3868-4f71-bb49-4684cd30a03a" />
