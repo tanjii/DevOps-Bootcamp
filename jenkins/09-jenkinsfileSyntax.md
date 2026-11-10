@@ -1,5 +1,4 @@
 ```
-
 pipeline {   
     agent any
     tools {
@@ -78,7 +77,9 @@ environment {
 }
 ```
 
+
 call it in a script: 
+
 
 ```
 echo "Building version ${NEW_VERSION}"
@@ -88,6 +89,7 @@ echo "Building version ${NEW_VERSION}"
 ### Credentials
 define cred in Jenkins, and use that in jenkins file
 in env. block add: 
+
 
 ```
 SERVER_CREDENTIALS = credentials('<credentialID>')
@@ -102,6 +104,7 @@ Credentials Binding
 Credentials Plugin
 
 
+
 ## Tools 
 defines tools - gradle, maven, jdk
 
@@ -114,20 +117,25 @@ maven "maven-3.9"
 }
 ```
 
+
 ## Parameters 
 
 ### String: 
 name, default value, descritpion
 select e.g. which version to deploy
 
+
 ```
 parameters {
     string(name: 'VERSION', defaultValue: '', description: 'Version to deploy')
 }
+```
 
 
 ### choice
+
 name, choices, description
+
 ```
 choice {
     name: 'VERSION', choices: ['1.1.0', '1.2.0'], description: 'Version to deploy'
