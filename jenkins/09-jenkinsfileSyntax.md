@@ -61,3 +61,82 @@ when {
   } 
 }
 ```
+
+## environmental variables
+important concept
+What variables are available? 
+List of all env.var: 
+<jenkinsURL>/env-vars.html/
+
+### can define own env.var: 
+
+add a code block: 
+
+```
+environment {
+    NEW_VERSION = '1.3.0'
+}
+```
+
+call it in a script: 
+
+```
+echo "Building version ${NEW_VERSION}"
+```
+
+
+### Credentials
+define cred in Jenkins, and use that in jenkins file
+in env. block add: 
+
+```
+SERVER_CREDENTIALS = credentials('<credentialID>')
+```
+
+
+
+
+#### Plugins
+These plugins must be added in Jenkins in order to create credentials and use them in jenkins file:
+Credentials Binding
+Credentials Plugin
+
+
+## Tools 
+defines tools - gradle, maven, jdk
+
+
+```
+tools {
+gradle
+jdk
+maven "maven-3.9"
+}
+```
+
+## Parameters 
+
+### String: 
+name, default value, descritpion
+select e.g. which version to deploy
+
+```
+parameters {
+    string(name: 'VERSION', defaultValue: '', description: 'Version to deploy')
+}
+
+
+### choice
+name, choices, description
+```
+choice {
+    name: 'VERSION', choices: ['1.1.0', '1.2.0'], description: 'Version to deploy'
+}
+```
+
+
+### boolean param
+to skip a certain stage on some builds
+
+
+# Must be enclosed in double quotes ""
