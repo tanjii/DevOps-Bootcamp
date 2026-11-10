@@ -21,6 +21,8 @@ pipeline {
                 }
             }
         }
+    }
+}
+```
         
-
-        
+Pipeline is a superset of multiple freestyle jobs, but in a simplified way.
