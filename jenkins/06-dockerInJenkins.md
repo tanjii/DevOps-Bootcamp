@@ -34,4 +34,27 @@ Apply corret permissions for docker.sock file so commands can be run inside a co
 chmod 666 /var/run/docker.sock
 ```
 
+## Build Docker image
+Add execute shell build step 
+```
+docker build -t java-maven-app:1.0 .
+```
+run the build
 
+<img width="721" height="120" alt="Screenshot 2026-11-10 at 13 55 55" src="https://github.com/user-attachments/assets/e3c75efc-1346-46c3-80b1-10d740f142bc" />
+
+## Push image to docker hub
+1. Create credentials
+   Manage Jenkins -> Credentials (relative path: /manage/credentials/store/system/domain/_/
+   add docker hub credentials
+
+2. add build steps to push to hub
+   ```
+docker build -t tanjii/demo-app:jma-1.0 .
+docker login -u $USERNAME -p $PASSWORD 
+docker push tanjii/demo-app:jma-1.0 
+
+   ```
+
+  select add secret text or files and provide username and password variable, select specific credentials
+<img width="716" height="538" alt="Screenshot 2026-11-10 at 14 13 17" src="https://github.com/user-attachments/assets/608069ab-3868-4f71-bb49-4684cd30a03a" />
