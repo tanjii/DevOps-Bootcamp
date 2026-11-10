@@ -148,3 +148,13 @@ to skip a certain stage on some builds
 
 
 # Must be enclosed in double quotes ""
+
+
+# external scripts
+
+
+```
+script {
+
+}
+```
