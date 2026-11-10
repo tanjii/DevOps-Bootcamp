@@ -158,3 +158,17 @@ script {
 
 }
 ```
+
+
+## User input
+
+
+```
+input {
+    message " Select env to deploy to"
+    ok "Env Selected"
+    parameters {
+        choice(name: 'ENV',choices: ['dev', 'staging'], description: 'Version to deploy')
+    }
+}
+```
