@@ -35,5 +35,6 @@ This shows the process of each stage, which means all defined stages will be dis
 To Install, go to Jenkins -> Manage Jenkins -> Plugins -> Available plugins -> Pipeline: Stage view -> Install with Restart, and restart the container. 
 
 ```docker ps -a #shows all containers, including the ones that are not running```
+
 ```docker start <containerID>```
 
