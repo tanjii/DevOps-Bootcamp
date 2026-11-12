@@ -40,5 +40,14 @@ Control access to individual server instances
 Basically firewall config
 
 This is flexible and granular
+Most of the things are configured by default.
+
+### Security
+Access can be configured on the:
+
+1. subnet level -> This is done through NACL - Network Access Control List 
+Which ports can be access for which subnet. 
+
+2. Individual instance level -> Security groups
 
 
