@@ -13,8 +13,32 @@ Subnetworks
 components, or suybnetworks of VPS
 It is a private network inside a network. 
 
-There are subnets:
+There are different subnets:
 1. Private - external traffic can't enter the subnet, instances are unavailable from external, but applications inside VPS can communicate between (e.g For DB)
 2. Public - allows external traffic 
 
 Firewall settings makes it eather public and/or private subnet. 
+
+### IP address
+
+#### Private IPs
+
+In VPC there is a range of internal IPs
+Range is defined by default, and it can be changed. 
+It is for traffic inside of the VPS, not for external traffic. It allows services to talk to each other. 
+
+#### Public IP
+
+We need to assign public IP if we want external access
+Internet gateway connects the VPC to the outside internet
+
+## Controling Access
+
+Secure components
+Control Access to VPC
+Control access to individual server instances
+Basically firewall config
+
+This is flexible and granular
+
+
