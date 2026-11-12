@@ -20,4 +20,10 @@ To group users that need same permissions, rather than individually giving them 
 
 ## Roles
 We can grant AWS services access to other AWS Services
+Policies can't be assigned to AWS Services directly, instead we assign a service role, and then we assign policies to that role. 
+There is a role for each service, the role is going to have permissions or policy attached to it, and service will be able to do what is supposed to do. 
+Steps: 
+  1. Assign a role to AWS Service, EKS for example
+  2. Attach policy to that role. 
+ 
 
